@@ -1,1 +1,69 @@
-/*  your css code here. If applicable */
+/* Page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+}
+
+/* Open button */
+#openModal {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 6px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Header */
+.modal-header {
+    padding: 15px;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Close button */
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Body */
+.modal-body {
+    padding: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
